@@ -82,7 +82,7 @@
 		},
 		{
 			"checksumSHA1": "MGnqHnmEqc1fjnYiWReSiW8C27A=",
-			"path": "github.com/prometheus/common/log",
+			"path": "github.com/prometheus/common/promlog",
 			"revision": "c873fb1f9420b83ee703b4361c61183b4619f74d",
 			"revisionTime": "2019-04-16T09:34:30Z"
 		},
