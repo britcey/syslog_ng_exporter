@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/alecthomas/kingpin/v2"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/prometheus/common/log"
 	"github.com/prometheus/common/version"
-	"gopkg.in/alecthomas/kingpin.v2"
+	log "github.com/sirupsen/logrus"
 )
 
 const (
@@ -218,7 +218,7 @@ func parseStatLine(line string) (Stat, error) {
 }
 
 func main() {
-	log.AddFlags(app)
+	// log.AddFlags(app)
 	kingpin.MustParse(app.Parse(os.Args[1:]))
 
 	if *showVersion {
